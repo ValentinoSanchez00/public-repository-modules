@@ -13,4 +13,10 @@ output "vnet_rg" {
 output "vnet_tags" {
     value = azurerm_virtual_network.vnet.tags
 }
+output "vnet_owner_tag" {
+    value = azurerm_virtual_network.vnet.tags.owner_tag
+}
+output "vnet_environment_tag" {
+    value = azurerm_virtual_network.vnet.tags.environment_tag
+}
 
