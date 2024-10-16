@@ -1,22 +1,21 @@
-
 output "vnet_name" {
-    value = module.vnet.vnet_name
+    value = azurerm_virtual_network.vnet.name
 }
 output "vnet_address_space" {
-    value = module.vnet.vnet_address_space
+    value = azurerm_virtual_network.vnet.address_space
 }
 output "vnet_location" {
-    value = module.vnet.location
+    value = azurerm_virtual_network.vnet.location
 }
 output "vnet_rg" {
-    value = module.vnet.gr_name
+    value = azurerm_virtual_network.vnet.resource_group_name
 }
 output "vnet_tags" {
-    value = module.vnet.vnet_tags
+    value = azurerm_virtual_network.vnet.tags
 }
 output "vnet_owner_tag" {
-    value = module.vnet.owner_tag
+    value = azurerm_virtual_network.vnet.tags.owner_tag
 }
 output "vnet_environment_tag" {
-    value = module.vnet.environment_tag
+    value = azurerm_virtual_network.vnet.tags.environment_tag
 }
